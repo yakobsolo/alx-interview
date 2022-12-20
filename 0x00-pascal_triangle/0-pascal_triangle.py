@@ -1,16 +1,21 @@
 #!/usr/bin/python3
 """
 pascal triangle
-Return: list of list
+
 """
 
 
 def pascal_triangle(n):
     """ pascal triangle implementation
+    arg:
+        integer n
+    return:
+        list of lists
     """
 
     if n<=0:
         return []
+
     pascalTriangle = [[1]]
     
     for i in range(n-1):

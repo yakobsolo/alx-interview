@@ -12,7 +12,7 @@ def pascal_triangle(n):
         list of lists
     """
 
-     pascalTriangle = [[1]]
+    pascalTriangle = [[1]]
         
     if n<=0:
         return []

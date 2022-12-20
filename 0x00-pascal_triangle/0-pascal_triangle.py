@@ -1,9 +1,18 @@
+#!/usr/bin/python3
+"""
+pascal triangle
+Return: list of list
+"""
+
+
 def pascal_triangle(n):
     """ pascal triangle implementation
     """
+
     if n<=0:
         return []
     pascalTriangle = [[1]]
+    
     for i in range(n-1):
         temp = [0]+pascalTriangle[-1]+[0]
         arr = []

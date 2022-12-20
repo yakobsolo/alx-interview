@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 pascal triangle
-
 """
 
 
@@ -13,10 +12,10 @@ def pascal_triangle(n):
         list of lists
     """
 
+     pascalTriangle = [[1]]
+        
     if n<=0:
         return []
-
-    pascalTriangle = [[1]]
     
     for i in range(n-1):
         temp = [0]+pascalTriangle[-1]+[0]
@@ -24,4 +23,5 @@ def pascal_triangle(n):
         for j in range(len(temp) -1):
             arr.append(temp[j]+temp[j+1])
         pascalTriangle.append(arr)
+        
     return pascalTriangle

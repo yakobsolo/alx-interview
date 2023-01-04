@@ -1,4 +1,14 @@
+#!/usr/bin/python3
+"""
+Return True if all boxes can be opened, else return False
+"""
+
+
 def canUnlockAll(boxes):
+    " 
+    T.C O(n) 
+    S.C O(n)
+    "
     keys = []
     for box in boxes:
         keys+=box

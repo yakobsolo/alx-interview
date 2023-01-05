@@ -10,7 +10,7 @@ def canUnlockAll(boxes):
         for j in boxes[i]:
             if j not in keyss:
                 if j < leng:
-                    myList.append(j)
+                    keyss.append(j)
     if len(keyss) == leng:
         return True
     return False
